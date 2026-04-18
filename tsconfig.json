@@ -16,7 +16,6 @@
       "*.png": ["assets/*"]
     },
     "typeRoots": [
-      "./src/assets",
       "./node_modules/@types"
     ]
   },
