@@ -2,12 +2,30 @@ import { Link } from "react-router";
 import { Heart, Users, GraduationCap, Briefcase, ArrowRight, Target, Eye, CheckCircle } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { HeroSlider } from "../components/hero-slider";
-import sliderImage003 from "../../assets/slider003.png";
+
+import homepage1 from "../../assets/homepage1.jpeg";
+import homepage2 from "../../assets/homepage2.jpeg";
+import homepage3 from "../../assets/homepage3.jpeg";
+import homepage4 from "../../assets/homepage4.jpeg";
+import homepage5 from "../../assets/homepage5.jpeg";
+import homepage6 from "../../assets/homepage6.jpeg";
+import homepage7 from "../../assets/homepage7.jpeg";
+import homepage8 from "../../assets/homepage8.jpeg";
+
 import testimonialImage1 from "../../assets/484cc6ca38428c0b5e24d4393e738778faa0614b.png";
 import testimonialImage2 from "../../assets/2f53c77a497cc1c5f0a3009a82e02245364f8fa6.png";
 
 export function Home() {
-  const sliderImages = [sliderImage003, sliderImage003, sliderImage003, sliderImage003, sliderImage003];
+  const sliderImages = [
+    homepage1,
+    homepage2,
+    homepage3,
+    homepage4,
+    homepage5,
+    homepage6,
+    homepage7,
+    homepage8
+  ];
 
   return (
     <div>
