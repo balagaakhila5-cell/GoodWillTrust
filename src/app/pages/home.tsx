@@ -30,11 +30,11 @@ export function Home() {
   return (
     <div>
       {/* Hero Section - Full Width Slider Only */}
-      <section className="relative overflow-hidden">
-        <div className="w-full h-[50vh] sm:h-[60vh] md:h-[69.58vh]">
-          <HeroSlider images={sliderImages} />
-        </div>
-      </section>
+   <section className="relative overflow-hidden">
+  <div className="w-[96.5%] mx-auto h-[50vh] sm:h-[60vh] md:h-[69.58vh] rounded-xl overflow-hidden">
+    <HeroSlider images={sliderImages} />
+  </div>
+</section>
 
       {/* Mission & Vision */}
       <section className="py-20 bg-gradient-to-b from-white via-blue-50/20 to-white relative overflow-hidden">
