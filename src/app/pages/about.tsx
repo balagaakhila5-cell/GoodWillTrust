@@ -235,20 +235,19 @@ export function About() {
         {teamMembers.map((member, index) => (
           <div key={index} className="text-center">
             <div className="bg-[#eeeeee] p-4 rounded-sm shadow-sm">
-              <div className="w-28 h-28 mx-auto rounded-full overflow-hidden bg-white">
+             <div className="w-40 h-40 mx-auto rounded-full overflow-hidden bg-white">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>
-
-            <h3 className="text-[20px] font-bold text-black mt-5 leading-tight min-h-[56px]">
+             <h3 className="text-[20px] font-bold text-black mt-3 leading-tight min-h-[32px]">
               {member.name}
             </h3>
 
-            <p className="text-black font-semibold mt-2 min-h-[40px] text-[14px]">
+            <p className="text-black font-semibold mt-1 text-[14px] leading-tight">
               {member.role}
             </p>
           </div>
