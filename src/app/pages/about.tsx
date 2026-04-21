@@ -11,11 +11,11 @@ export function About() {
   const teamMembers = [
     {
       name: "Teja Gadamsetty",
-      role: "Founder & Director",
+      role: "Founder & Managing Trustee",
       image: tejaPhotoImage,
     },
     {
-      name: "Amaranth",
+      name: "Amaranth Simhadri",
       role: "Co-Founder",
       image: amarImage,
     },
@@ -25,7 +25,7 @@ export function About() {
       image: verrabaddireddyImage,
     },
     {
-      name: "RaghuBabu",
+      name: "Dr.RaghuBabu",
       role: "Trustee Member",
       image: raghuBabuImage,
     },
@@ -213,19 +213,19 @@ export function About() {
       </section>
 
       {/* Our Team */}
-      <section className="py-20 bg-[#f4b000]">
+      <section className="py-20 bg-[#1D4EA0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <div className="inline-flex items-center justify-center gap-2 bg-white/40 text-black px-4 py-2 rounded-full mb-4">
+            <div className="inline-flex items-center justify-center gap-2 bg-black/40 text-white px-4 py-2 rounded-full mb-4">
               <Users size={16} />
               <span className="font-semibold text-sm">OUR TEAM</span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Meet Our Leadership
             </h2>
 
-            <p className="text-lg text-black/80 max-w-3xl mx-auto">
+            <p className="text-lg text-white/80 max-w-3xl mx-auto">
               Dedicated professionals committed to empowering individuals with disabilities and creating lasting
               social impact
             </p>
@@ -243,11 +243,11 @@ export function About() {
                 />
               </div>
             </div>
-             <h3 className="text-[20px] font-bold text-black mt-3 leading-tight min-h-[32px]">
+             <h3 className="text-[20px] font-bold text-white mt-3 leading-tight min-h-[32px]">
               {member.name}
             </h3>
 
-            <p className="text-black font-semibold mt-1 text-[14px] leading-tight">
+            <p className="text-white font-semibold mt-1 text-[14px] leading-tight">
               {member.role}
             </p>
           </div>
@@ -260,12 +260,12 @@ export function About() {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-full mb-6">
                   <Heart size={32} className="text-[#f4b000]" />
                 </div>
-                <p className="text-xl md:text-2xl text-black font-semibold leading-relaxed italic mb-4">
+                <p className="text-xl md:text-2xl text-white font-semibold leading-relaxed italic mb-4">
                   "Together, we believe in the power of empowerment, dignity, and opportunity. Every individual we
                   serve is a testament to the incredible potential that exists when barriers are removed and
                   possibilities are embraced."
                 </p>
-                <p className="text-lg text-black/80 font-medium">— The Goodwill Trust Team</p>
+                <p className="text-lg text-white/80 font-medium">— The Goodwill Trust Team</p>
               </div>
             </div>
           </div>

@@ -31,7 +31,7 @@ export function Home() {
     <div>
       {/* Hero Section - Full Width Slider Only */}
    <section className="relative overflow-hidden">
-  <div className="w-[96.5%] mx-auto h-[50vh] sm:h-[60vh] md:h-[69.58vh] rounded-xl overflow-hidden">
+  <div className="w-[100%] mx-auto h-[50vh] sm:h-[60vh] md:h-[69.58vh] rounded-xl overflow-hidden">
     <HeroSlider images={sliderImages} />
   </div>
 </section>
