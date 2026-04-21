@@ -15,8 +15,25 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const whatsappNumber = "918309337196";
+
+    const text = `Hello Good Will Trust,
+
+Full Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Subject: ${formData.subject}
+Message: ${formData.message}`;
+
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
     setSubmitted(true);
+
+    window.open(whatsappURL, "_blank");
+
     setTimeout(() => setSubmitted(false), 5000);
+
     setFormData({
       name: "",
       email: "",
@@ -26,7 +43,9 @@ export function Contact() {
     });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -128,13 +147,15 @@ export function Contact() {
               {submitted && (
                 <div className="mb-6 md:mb-8 bg-green-50 border border-green-200 text-green-800 p-4 rounded-xl flex items-center gap-3">
                   <CheckCircle2 size={24} className="text-green-600 flex-shrink-0" />
-                  <p className="font-semibold text-sm sm:text-base">Thank you for contacting us! We'll get back to you soon.</p>
+                  <p className="font-semibold text-sm sm:text-base">
+                    Thank you! Redirecting to WhatsApp...
+                  </p>
                 </div>
               )}
 
               <form onSubmit={handleSubmit} className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg">
                 <h3 className="text-xl sm:text-2xl font-bold text-primary mb-6">Send us a Message</h3>
-                
+
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
