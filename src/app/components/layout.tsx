@@ -273,15 +273,6 @@ export function Layout() {
                   <Instagram size={24} />
                 </a>
                 <a 
-                  href="#" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-gradient-to-br from-primary/10 to-primary/5 hover:from-[#1DA1F2] hover:to-[#0d8bd9] text-primary hover:text-white p-3 rounded-xl transition-all hover:shadow-lg hover:scale-110 group"
-                  aria-label="Twitter"
-                >
-                  <Twitter size={24} />
-                </a>
-                <a 
                   href="https://www.linkedin.com/company/goodwilltrust"
                   target="_blank"
                   rel="noopener noreferrer"

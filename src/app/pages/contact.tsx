@@ -16,7 +16,7 @@ export function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const whatsappNumber = "8309337196";
+    const whatsappNumber = "9392653808";
 
     const text = `Hello Good Will Trust,
 
@@ -109,7 +109,7 @@ Message: ${formData.message}`;
                   <div>
                     <h3 className="font-semibold text-foreground mb-1 text-sm sm:text-base">Phone</h3>
                     <p className="text-muted-foreground text-sm sm:text-base">
-                      +91 8309337196
+                      +91 9392653808
                     </p>
                   </div>
                 </div>
@@ -315,12 +315,6 @@ Message: ${formData.message}`;
               className="bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-xl font-semibold transition-colors"
             >
               Facebook
-            </a>
-            <a
-              href="https://www.instagram.com/goodwilltrusts?igsh=Z2ZzN3JtdXJ1MnAz"
-              className="bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-xl font-semibold transition-colors"
-            >
-              Twitter
             </a>
             <a
               href="https://www.instagram.com/goodwilltrusts?igsh=Z2ZzN3JtdXJ1MnAz"

@@ -48,7 +48,7 @@ Working hours
 
 Column 4 – Follow Us
 
-Social media icons (Facebook, Instagram, Twitter, LinkedIn)
+Social media icons (Facebook, Instagram, LinkedIn)
 
 Icons should have hover animations
 
