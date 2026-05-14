@@ -109,7 +109,7 @@ Message: ${formData.message}`;
                   <div>
                     <h3 className="font-semibold text-foreground mb-1 text-sm sm:text-base">Phone</h3>
                     <p className="text-muted-foreground text-sm sm:text-base">
-                      +91 9392653808
+                      +91 8309337196
                     </p>
                   </div>
                 </div>
