@@ -16,7 +16,7 @@ export function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const whatsappNumber = "9392653808";
+    const whatsappNumber = "8309337196";
 
     const text = `Hello Good Will Trust,
 

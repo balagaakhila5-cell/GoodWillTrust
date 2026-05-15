@@ -20,7 +20,7 @@ export function About() {
       image: amarImage,
     },
     {
-      name: "Verrabaddireddy",
+      name: "Veerabaddireddy",
       role: "Co-Founder",
       image: verrabaddireddyImage,
     },
