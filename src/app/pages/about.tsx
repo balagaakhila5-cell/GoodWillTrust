@@ -15,7 +15,7 @@ export function About() {
       image: tejaPhotoImage,
     },
     {
-      name: "Amaranath Simhadri",
+      name: "Amarnath Simhadri",
       role: "Co-Founder",
       image: amarImage,
     },
