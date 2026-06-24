@@ -16,13 +16,13 @@ export function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const whatsappNumber = "8309337196";
+   const whatsappNumber = "918309337196";
 
     const text = `Hello Good Will Trust,
 
 Full Name: ${formData.name}
 Email: ${formData.email}
-Phone: ${formData.phone}
+Phone: +91 ${formData.phone}
 Subject: ${formData.subject}
 Message: ${formData.message}`;
 
@@ -191,41 +191,50 @@ Message: ${formData.message}`;
 
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-semibold text-foreground mb-2">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-input-background focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                      placeholder="+91 1234567890"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-semibold text-foreground mb-2">
-                      Subject *
-                    </label>
-                    <select
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-input-background focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                    >
-                      <option value="">Select a subject</option>
-                      <option value="general">General Inquiry</option>
-                      <option value="volunteer">Volunteer Opportunities</option>
-                      <option value="donation">Donation Information</option>
-                      <option value="programs">Program Information</option>
-                      <option value="partnership">Partnership Opportunities</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-                </div>
+  <label htmlFor="phone" className="block text-sm font-semibold text-foreground mb-2">
+    Phone Number
+  </label>
+
+  <div className="flex">
+    <span className="inline-flex items-center px-4 border border-r-0 border-border rounded-l-lg bg-gray-100 text-gray-600">
+      +91
+    </span>
+
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      value={formData.phone}
+      onChange={handleChange}
+      maxLength={10}
+      className="w-full px-4 py-3 rounded-r-lg border border-border bg-input-background focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+      placeholder="123456789"
+    />
+  </div>
+</div>
+
+<div>
+  <label htmlFor="subject" className="block text-sm font-semibold text-foreground mb-2">
+    Subject *
+  </label>
+
+  <select
+    id="subject"
+    name="subject"
+    value={formData.subject}
+    onChange={handleChange}
+    required
+    className="w-full px-4 py-3 rounded-lg border border-border bg-input-background focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+  >
+    <option value="">Select a subject</option>
+    <option value="general">General Inquiry</option>
+    <option value="volunteer">Volunteer Opportunities</option>
+    <option value="donation">Donation Information</option>
+    <option value="programs">Program Information</option>
+    <option value="partnership">Partnership Opportunities</option>
+    <option value="other">Other</option>
+  </select>
+</div>      </div>
 
                 <div className="mb-6">
                   <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-2">
